@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    font-weight: $fw-bold;
+    padding: 5px 10px;
+    background: rgba($action-color, 0.5);
+    color: #fff;
+    transition: all $def-trans-time;
+    box-shadow: 0 2px 2px 0 rgba($base-color, 0.5);
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background: $action-color;
+    }
+}

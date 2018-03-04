@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    @include linear-gradient($bg-color, $bg-color2);
+    min-height: 100%;
+}
+
+body {
+    font: 15px $base-font;
+    color: $base-color;
+}
+
+.container {
+    width: $container-w;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 70px 0 25px 0;
+
+    @media all and (max-width: $col-md) {
+        padding: 70px 20px 20px;
+    }
+}
+
+.text {
+    &-center {
+        text-align: center;
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
+    }
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    font-family: $title-font;
+    font-weight: $fw-bold;
+}
+
+h1 {
+    font-size: $fs-title;
+    margin: 10px 0 15px;
+}
+
+p {
+    font-size: $fs-base;
+    margin: 0 0 10px;
+}
+
+section {
+    margin: 25px 0;
+    padding: 25px 20px;
+    background: rgba($secondary, 0.15);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    font-family: inherit;
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,136 @@
+/* 
+ * To do list style 
+ * Author: Krisztian Csepregi
+ * Date: 2017 Q1  
+*/
+@import url("https://fonts.googleapis.com/css?family=Oswald:700|Quattrocento&amp;subset=latin-ext");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  background: #cccccc;
+  background: -webkit-linear-gradient(legacy-direction(#fffef7), #cccccc);
+  background: linear-gradient(#fffef7, #cccccc);
+  min-height: 100%; }
+
+body {
+  font: 15px "Quattrocento", Arial, serif;
+  color: #2f2f2f; }
+
+.container {
+  width: 990px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 70px 0 25px 0; }
+  @media all and (max-width: 999px) {
+    .container {
+      padding: 70px 20px 20px; } }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+input {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 10px; }
+
+h1, h2, h3 {
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 700; }
+
+h1 {
+  font-size: 20px;
+  margin: 10px 0 15px; }
+
+p {
+  font-size: 15px;
+  margin: 0 0 10px; }
+
+section {
+  margin: 25px 0;
+  padding: 25px 20px;
+  background: rgba(100, 112, 108, 0.15); }
+
+img {
+  max-width: 100%; }
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit; }
+
+.site-header {
+  background: rgba(47, 47, 47, 0.9);
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 25px;
+  padding: 15px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center; }
+
+.btn, input[type="submit"], button {
+  display: inline-block;
+  font-weight: 700;
+  padding: 5px 10px;
+  background: rgba(222, 92, 68, 0.5);
+  color: #fff;
+  transition: all 0.3s;
+  box-shadow: 0 2px 2px 0 rgba(47, 47, 47, 0.5);
+  text-align: center;
+  cursor: pointer; }
+  .btn:hover, input[type="submit"]:hover, button:hover {
+    background: #de5c44; }
+
+input[type="submit"], button {
+  padding: 10px 20px;
+  border: 0; }
+
+.list-item {
+  background: rgba(100, 112, 108, 0.15);
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.3s;
+  position: relative; }
+  .list-item:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background: #de5c44;
+    border-bottom: 3px;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transition: 0.6s;
+    transform: translateY(-50%); }
+  .list-item.completed {
+    background: rgba(100, 112, 108, 0.05);
+    color: rgba(47, 47, 47, 0.5); }
+    .list-item.completed:after {
+      left: -5px;
+      right: -5px; }
+  .list-item__wrapper {
+    margin: 0 0 15px;
+    list-style: none; }
+  .list-item__actions {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch; }
+    .list-item__actions .btn, .list-item__actions input[type="submit"], .list-item__actions button {
+      flex-grow: 1; }
