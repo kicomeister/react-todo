@@ -1,6 +1,7 @@
 {
   "name": "todoapp",
   "version": "0.1.0",
+  "homepage": "https://kicomeister.github.io/react-todo/",
   "private": true,
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
