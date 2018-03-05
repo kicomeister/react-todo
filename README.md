@@ -1,4 +1,18 @@
 # react-todo
-Simple Todo App
+Simple Todo App with my old basic layout. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+## Demo
+Check the [Demo](https://kicomeister.github.io/react-todo/).
+
+## Dependencies
+
+- Node.js
+- npm
+
+## Installition
+
+```
+clone project
+npm install
+npm start
+```
