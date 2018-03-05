@@ -6,6 +6,7 @@
         font-weight: 700;
         transition: $def-trans-time;
         position: relative;
+        cursor: pointer;
 
         &:after {
             content: '';
