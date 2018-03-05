@@ -16,19 +16,21 @@ export default class ListItems extends Component {
                 >{item.text}
             </div>
             <div className="list-item__actions">
-                <div className="btn list-item__edit" onClick={(e) => this.edit(item.key, e)}>Edit</div>
-                <div className="btn list-item__delete" onClick={(e) => this.delete(item.key, e)}>Delete</div>
+                <a href="#" className="btn list-item__edit" onClick={(e) => this.edit(item.key, e)}>Edit</a>
+                <a href="#" className="btn list-item__delete" onClick={(e) => this.delete(item.key, e)}>Delete</a>
             </div>
         </li>
     }
 
     delete(key, e) {
+        e.preventDefault();
         e.stopPropagation();
         e.nativeEvent.stopImmediatePropagation();
         this.props.delete(key)
     }
 
     edit(key, e) {
+        e.preventDefault();
         e.stopPropagation();
         e.nativeEvent.stopImmediatePropagation();
         this.props.edit(key)
